@@ -2,10 +2,14 @@ import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Define the stock symbol and date range
-stock_symbol = 'AAPL'  # Change to the symbol of the stock you want to analyze
-start_date = '2022-01-01'
-end_date = '2023-01-01'
+# Get user input for the stock symbol
+stock_symbol = input("Enter the stock symbol you want to analyze: ")
+
+# Get user input for the start date
+start_date = input("Enter the start date (YYYY-MM-DD): ")
+
+# Get user input for the end date
+end_date = input("Enter the end date (YYYY-MM-DD): ")
 
 # Download the historical stock price data
 stock_data = yf.download(stock_symbol, start=start_date, end=end_date)
