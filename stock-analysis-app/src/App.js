@@ -56,14 +56,3 @@ function App() {
 }
 
 export default App;
-fetch('http://localhost:5000/analyze', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ stock_symbol: stockSymbol, start_date: startDate, end_date: endDate }),
-})
-.then(response => response.json())
-.then(data => {
-    // Handle the data from the Flask API
-});
