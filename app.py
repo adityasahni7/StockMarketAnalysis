@@ -38,4 +38,4 @@ def stock_analysis(symbol, start_date, end_date):
     return send_file(img, mimetype='image/png')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)  
